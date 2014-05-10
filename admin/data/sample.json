@@ -7,6 +7,22 @@
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.496685,12.785733]},
     "properties": {"log": "77.487560", "Route Name": "SOMANAHALLI", "Route Code": "RC00027", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS-HS - Somanahalli", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "ambuja-school.csv"}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [77.568123,12.940615]},
+    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS-HS - Somanahalli", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "APS-HS-SOMANAHALLI.csv"}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [77.596996,12.937835]},
+    "properties": {"log": "77.487560", "Route Name": "AUDUGODI", "Route Code": "RC00002", "lon": "13.051405", "Range": "Vaikunta Hills- TAPF", "School Name ": "AMC- Nimhans (P)", "location": "hkh", "Slno": "2", "Type": "PRVSH", "Class": "B-9-10", "filename" : "AMC-NIMHANS.csv"}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [77.714438,12.909853]},
+    "properties": {"log": "77.487560", "Route Name": "VARTHURU", "Route Code": "RC00031", "lon": "13.051405", "Range": "Vaikunta Hills- TAPF", "School Name ": "Ananya Trust(P)", "location": "hkh", "Slno": "2", "Type": "PRVSH", "Class": "B-9-10", "filename" : "ANANYA TRUST(P)"}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [77.698515,12.910668]},
+    "properties": {"log": "77.487560", "Route Name": "PANATHUR", "Route Code": "RC00020", "lon": "13.051405", "Range": "Block Education Officer,South Range- 4", "School Name ": "Anjanadri HS Doddakannali(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "ANJANADRIHSDODDAKANNALI.csv"}
    }
  ]
 }
