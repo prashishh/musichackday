@@ -10,31 +10,31 @@
    },
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.568123,12.940615]},
-    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS-HS - Somanahalli", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "APS-HS-SOMANAHALLI.csv"}
+    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS-HS - Somanahalli", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "aps-som.csv"}
    },
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.596996,12.937835]},
-    "properties": {"log": "77.487560", "Route Name": "AUDUGODI", "Route Code": "RC00002", "lon": "13.051405", "Range": "Vaikunta Hills- TAPF", "School Name ": "AMC- Nimhans (P)", "location": "hkh", "Slno": "2", "Type": "PRVSH", "Class": "B-9-10", "filename" : "AMC-NIMHANS.csv"}
+    "properties": {"log": "77.487560", "Route Name": "AUDUGODI", "Route Code": "RC00002", "lon": "13.051405", "Range": "Vaikunta Hills- TAPF", "School Name ": "AMC- Nimhans (P)", "location": "hkh", "Slno": "2", "Type": "PRVSH", "Class": "B-9-10", "filename" : "amc-nim.csv"}
    },
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.714438,12.909853]},
-    "properties": {"log": "77.487560", "Route Name": "VARTHURU", "Route Code": "RC00031", "lon": "13.051405", "Range": "Vaikunta Hills- TAPF", "School Name ": "Ananya Trust(P)", "location": "hkh", "Slno": "2", "Type": "PRVSH", "Class": "B-9-10", "filename" : "ANANYA TRUST(P)"}
+    "properties": {"log": "77.487560", "Route Name": "VARTHURU", "Route Code": "RC00031", "lon": "13.051405", "Range": "Vaikunta Hills- TAPF", "School Name ": "Ananya Trust(P)", "location": "hkh", "Slno": "2", "Type": "PRVSH", "Class": "B-9-10", "filename" : "ananya.csv"}
    },
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.698515,12.910668]},
-    "properties": {"log": "77.487560", "Route Name": "PANATHUR", "Route Code": "RC00020", "lon": "13.051405", "Range": "Block Education Officer,South Range- 4", "School Name ": "Anjanadri HS Doddakannali(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "ANJANADRIHSDODDAKANNALI.csv"}
+    "properties": {"log": "77.487560", "Route Name": "PANATHUR", "Route Code": "RC00020", "lon": "13.051405", "Range": "Block Education Officer,South Range- 4", "School Name ": "Anjanadri HS Doddakannali(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "anj-dri.csv"}
    },
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.673826,12.966793]},
-    "properties": {"log": "77.487560", "Route Name": "HAL", "Route Code": "RC00008", "lon": "13.051405", "Range": "Block Education Officer,South Range- 4", "School Name ": "APSA-Annasandra palya (1-5)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "APSAANNASANDRAPALYA.csv"}
+    "properties": {"log": "77.487560", "Route Name": "HAL", "Route Code": "RC00008", "lon": "13.051405", "Range": "Block Education Officer,South Range- 4", "School Name ": "APSA-Annasandra palya (1-5)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "aps-san.csv"}
    },
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.568123,12.940615]},
-    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS HS- NR Colony(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "APSAANNASANDRAPALYA.csv"}
+    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS HS- NR Colony(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "aps-nr.csv"}
    },
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.561523,12.915175]},
-    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "Banashankari  HS-Bendre Nagara(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "BANASHANKARI-HS-BENDRE-NAGARA.csv"}
+    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "Banashankari  HS-Bendre Nagara(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "ben-har.csv"}
    }
  ]
 }

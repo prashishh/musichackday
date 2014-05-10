@@ -13,7 +13,7 @@ var x = d3.scale.ordinal()
 .domain(d3.range(m))
 .rangeRoundBands([0, width], .08);
 
-var y = d3.scale.linear()
+var y = d3.scale  
 .domain([0, yStackMax])
 .range([height, 0]);
 
@@ -79,8 +79,8 @@ function bumpLayer(n, o) {
 function initialize() {
 
   var mapOptions = {
-    zoom: 5,
-    center: new google.maps.LatLng(21.431364, 81.7349884)
+    zoom: 10,
+    center: new google.maps.LatLng(12.940615, 77.568123)
   };
 
   var map = new google.maps.Map(document.getElementById('map-canvas'),
