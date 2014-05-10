@@ -94,8 +94,8 @@ function initialize() {
   map.data.addListener('click', function(event) {
     map.data.revertStyle();
     map.data.overrideStyle(event.feature, {fillColor: 'red'});
-    console.log(event.feature);
-
+   
+    smallerChart('smallerGraph', event.feature.j['filename']);
 
     document.querySelector('#schoolDetails').innerHTML  = ('<table class="table table-striped"><thead><tr><td>School Name</td><td>' + event.feature.j['School Name '] + '</td></tr>'+'</thead><thead><tr><td>Route Name</td><td>' + event.feature.j['Route Name'] + '</td></tr>'+'</thead><thead><tr><td>Route Code</td><td>' + event.feature.j['Route Code'] + '</td></tr>'+'</thead><thead><tr><td>Range</td><td>' + event.feature.j['Range'] + '</td></tr><tr><td>Type</td><td>' + event.feature.j['Type'] + '</td></tr><tr><td>Class</td><td>' + event.feature.j['Class'] + '</td></tr></thead><tbody>'+'</tbody></table>');
   });
