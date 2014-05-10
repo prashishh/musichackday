@@ -23,6 +23,18 @@
    { "type": "Feature",
     "geometry": {"type": "Point", "coordinates": [77.698515,12.910668]},
     "properties": {"log": "77.487560", "Route Name": "PANATHUR", "Route Code": "RC00020", "lon": "13.051405", "Range": "Block Education Officer,South Range- 4", "School Name ": "Anjanadri HS Doddakannali(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "ANJANADRIHSDODDAKANNALI.csv"}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [77.673826,12.966793]},
+    "properties": {"log": "77.487560", "Route Name": "HAL", "Route Code": "RC00008", "lon": "13.051405", "Range": "Block Education Officer,South Range- 4", "School Name ": "APSA-Annasandra palya (1-5)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "APSAANNASANDRAPALYA.csv"}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [77.568123,12.940615]},
+    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS HS- NR Colony(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "APSAANNASANDRAPALYA.csv"}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [77.561523,12.915175]},
+    "properties": {"log": "77.487560", "Route Name": "BENDRE NAGARA", "Route Code": "RC00030", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "Banashankari  HS-Bendre Nagara(9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "BANASHANKARI-HS-BENDRE-NAGARA.csv"}
    }
  ]
 }
