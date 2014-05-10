@@ -1,0 +1,28 @@
+{ "type": "FeatureCollection",
+ "features": [
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [84,20]},
+    "properties": {"name": "school0","students": 9}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [85.4259942,20.2639132]},
+    "properties": {"name": "school1","students": 8}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [86.4259942,21.2639132]},
+    "properties": {"name": "school2","students": 13}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [87.4259942,21.2639132]},
+    "properties": {"name": "school3","students": 100}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [81.4259942,21.2639132]},
+    "properties": {"name": "school4","students": 8}
+   },
+   { "type": "Feature",
+    "geometry": {"type": "Point", "coordinates": [79.4259942,21.2639132]},
+    "properties": {"name": "school5","students": 9}
+   }
+ ]
+}
