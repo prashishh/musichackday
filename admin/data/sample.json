@@ -1,40 +1,12 @@
 { "type": "FeatureCollection",
  "features": [
    { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.487560,13.051405]},
-    "properties": {"log": "77.487560", "Route Name": "BAGALAGUNTE", "Route Code": "RC00001", "lon": "13.051405", "Range": "Block Education Officer,North Range- 1", "School Name ": "GHPS-CHIKKABIDARAKALLU (1-5)", "location": "hkh", "Slno": "1", "Type": "MDMML", "Class": "B-1-5"}
+    "geometry": {"type": "Point", "coordinates": [77.614065,12.984121]},
+    "properties": {"log": "77.614065", "Route Name": "S S GARDEN", "Route Code": "RC00023", "lon": "13.051405", "Range": "Block Education Officer,North Range- 3", "School Name ": "Ambujambal HS- St John's Road", "location": "hkh", "Slno": "1", "Type": "MDMML", "Class": "B-1-5", "filename" : "akalvya-school.csv"}
    },
    { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.487560,20.2639132]},
-    "properties": {"log": "77.487560", "Route Name": "BAGALAGUNTE", "Route Code": "RC00001", "lon": "13.051405", "Range": "Block Education Officer,North Range- 1", "School Name ": "GHS-CHIKKABIDARAKALLU (9-10)", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10"}
-   },
-   { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.489358,13.045227]},
-    "properties": {"log": "77.489358", "Route Name": "BAGALAGUNTE", "Route Code": "RC00001", "lon": "13.045227", "Range": "Block Education Officer,North Range- 1", "School Name ": "GLPS-MUNI SWAMAPPA LAYOUT (1-5)", "location": "hkh", "Slno": "3", "Type": "MDMML", "Class": "B-1-5"}
-   },
-   { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.644718,13.157992]},
-    "properties": {"log": "77.644718", "Route Name": "DEVANAHALLI", "Route Code": "RC00004", "lon": "13.157992", "Range": "Block Education Officer,North Range- 4", "School Name ": "GHS-VIDYANAGAR (9-10)", "location": "hkh", "Slno": "41", "Type": "MDMML", "Class": "B-9-10"}
-   },
-   { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.564973,12.990292]},
-    "properties": {"log": "77.564973", "Route Name": "GANDINAGAR", "Route Code": "RC00006", "lon": "12.990292", "Range": "Block Education Officer,North Range- 2", "School Name ": "GGHPS-SRIRAMPURA (1-5)", "location": "hkh", "Slno": "73", "Type": "MDMML", "Class": "B-1-5"}
-   },
-   { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.606100,13.020052]},
-    "properties": {"log": "", "Route Name": "GANGANAGAR", "Route Code": "RC00007", "lon": "", "Range": "Block Education Officer,North Range- 3", "School Name ": "GANDHI SMARAKA KAVAL BYRASANDRA  HPS (1-5)", "location": "hkh", "Slno": "86", "Type": "MDMML", "Class": "B-1-5"}
-   },
-   { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.487773,12.728613]},
-    "properties": {"log": "77.487773", "Route Name": "HAROHALLI", "Route Code": "RC00009", "lon": "12.728613", "Range": "Block Education Officer, Kanakapura Range", "School Name ": "GHS- Kaggalahalli(9-10)", "location": "vkh", "Slno": "930", "Type": "MDMML", "Class": "B-9-10"}
-   },
-   { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.506128,12.672858]},
-    "properties": {"log": "77.506128", "Route Name": "HAROHALLI", "Route Code": "RC00009", "lon": "12.672858", "Range": "Block Education Officer, Kanakapura Range", "School Name ": "GHPS-Dyavasandra(1-5)", "location": "vkh", "Slno": "937", "Type": "MDMML", "Class": "B-1-5"}
-   },
-   { "type": "Feature",
-    "geometry": {"type": "Point", "coordinates": [77.550093,12.965003]},
-    "properties": {"log": "77.550093", "Route Name": "MAGADI ROAD", "Route Code": "RC00016", "lon": "12.965003", "Range": "Education Officer BBMP Schools", "School Name ": "CGHS Padarayanapura(8th)", "location": "vkh", "Slno": "954", "Type": "BMPSH", "Class": "C-8-10"}
+    "geometry": {"type": "Point", "coordinates": [77.496685,12.785733]},
+    "properties": {"log": "77.487560", "Route Name": "SOMANAHALLI", "Route Code": "RC00027", "lon": "13.051405", "Range": "Block Education Officer,South Range- 1", "School Name ": "APS-HS - Somanahalli", "location": "hkh", "Slno": "2", "Type": "MDMML", "Class": "B-9-10", "filename" : "ambuja-school.csv"}
    }
  ]
 }
