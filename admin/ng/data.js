@@ -112,3 +112,29 @@ function initialize() {
 }
 //google.maps.event.addDomListener(window, 'load', initialize);
 
+
+// schools charts
+function setupChart(id, options){
+  // make chart object
+  var chart = new d3_tsline("#"+ id, options);
+
+  // override parse_date function to handle our data's date format
+  chart.parse_date = d3.time.format("%Y-%m-%d").parse;
+  chart.parse_val = function(v) {
+    return parseInt(v);
+  }
+  // add some metadata about the series
+  chart.series = {
+    "aapl" : {
+      "name"   : "AAPL",
+      "active" : true
+    }
+  };
+  chart.ref_series="aapl";
+  chart.view_span = 120;
+  // fetch data and draw the chart
+  var data = get_aapl();
+  chart.setSeriesData("aapl",data);
+  chart.render();
+}
+

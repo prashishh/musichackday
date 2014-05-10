@@ -43,5 +43,7 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
   	$scope.init = function () {
       // creates the google map
       initialize();
+      setupChart('mainGraph');
+      //setupChart('smallerchart', { width: 500, height: 150, tension: 0.5, interpolation: 'monotone', showSummary: false});
     };
   });
