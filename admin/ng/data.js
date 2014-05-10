@@ -6,14 +6,14 @@ var n = 2, // number of layers
     yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
 
 var margin = {top: 40, right: 10, bottom: 20, left: 10},
-    width = 300 - margin.left - margin.right,
+    width = 280 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
 .domain(d3.range(m))
 .rangeRoundBands([0, width], .08);
 
-var y = d3.scale  
+var y = d3.scale.linear()
 .domain([0, yStackMax])
 .range([height, 0]);
 
@@ -144,8 +144,8 @@ function smallerChart(id, filename) {
   id = id || "smallerGraph";
   
   var margin = {top: 20, right: 20, bottom: 30, left: 50},
-      width = 960 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      width = 800 - margin.left - margin.right,
+      height = 300 - margin.top - margin.bottom;
 
   var parseDate = d3.time.format("%d-%b-%y").parse;
 
@@ -195,7 +195,7 @@ function smallerChart(id, filename) {
     .attr("y", 6)
     .attr("dy", ".71em")
     .style("text-anchor", "end")
-    .text("Price ($)");
+    .text("People");
 
     svg.append("path")
     .datum(data)
