@@ -10,9 +10,9 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
     templateUrl:'./ng/templates/dashboard.html',
    	controller: 'dashboardController'
   })
-  .when('/edit/:projectId', {
-    controller:'EditCtrl',
-    templateUrl:'detail.html'
+  .when('/school/add', {
+  	controller: 'schoolController',
+    templateUrl: './ng/templates/schooladd.html'
   })
   .when('/schools', {
     controller:'schoolController',
@@ -36,8 +36,17 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
         };
    })
   .controller('schoolController', function ($scope, $firebase) {
+    $scope.newSchool = {"Class": "","Range": "","Route Code": "","Route Name": "","School Name ": "","Slno": "","Type": "","location": "","log": "","lon": ""};
     var schoolRef = new Firebase("codeforindia.firebaseio.com/");
     $scope.schools = $firebase(schoolRef);
+    $scope.addSchool = function () {  
+      	schoolRef.push($scope.newSchool); 
+      	$scope.reset();
+      	alert("School added");
+    };
+    $scope.reset = function () {
+      $scope.newSchool = {"Class": "","Range": "","Route Code": "","Route Name": "","School Name ": "","Slno": "","Type": "","location": "","log": "","lon": ""};
+    };
   })
   .directive('topMenu', function () {
 	  return {
