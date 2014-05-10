@@ -1,10 +1,10 @@
 /*global angular:false, $:false, d3:false */
 'use strict';
 angular.module('votersAnalytics', ['ui.bootstrap'], function () {
-
+  
 })
   .controller('appController', function ($scope) {
-
+    
   })
   .directive('topMenu', function () {
 	  return {

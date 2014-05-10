@@ -1,12 +1,12 @@
 var n = 2, // number of layers
-    m = 30, // number of samples per layer
+    m = 5, // number of samples per layer
     stack = d3.layout.stack() ,
     layers = stack(d3.range(n).map(function() { return bumpLayer(m, .1); })),
     yGroupMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y; }); }),
     yStackMax = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
 
 var margin = {top: 40, right: 10, bottom: 20, left: 10},
-    width = 960 - margin.left - margin.right,
+    width = 300 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
@@ -27,7 +27,7 @@ var xAxis = d3.svg.axis()
 .tickPadding(6)
 .orient("bottom");
 
-var svg = d3.select("#schoolDetails").append('svg')
+var svg = d3.select("#barChart").append('svg')
 .attr("width", width + margin.left + margin.right)
 .attr("height", height + margin.top + margin.bottom)
 .append("g")
@@ -95,7 +95,9 @@ function initialize() {
     map.data.revertStyle();
     map.data.overrideStyle(event.feature, {fillColor: 'red'});
     console.log(event.feature);
-    document.querySelector('#schoolDetails').innerHTML  = ('name: '+event.feature.j.name +' students: '+event.feature.j.students);
+
+
+    document.querySelector('#schoolDetails').innerHTML  = ('<table class="table table-striped"><thead><tr><td>School Name</td><td>' + event.feature.j['School Name '] + '</td></tr>'+'</thead><thead><tr><td>Route Name</td><td>' + event.feature.j['Route Name'] + '</td></tr>'+'</thead><thead><tr><td>Route Code</td><td>' + event.feature.j['Route Code'] + '</td></tr>'+'</thead><thead><tr><td>Range</td><td>' + event.feature.j['Range'] + '</td></tr><tr><td>Type</td><td>' + event.feature.j['Type'] + '</td></tr><tr><td>Class</td><td>' + event.feature.j['Class'] + '</td></tr></thead><tbody>'+'</tbody></table>');
   });
 
   map.data.addListener('mouseover', function(event) {
