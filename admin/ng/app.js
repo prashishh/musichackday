@@ -18,6 +18,10 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
     controller:'schoolController',
     templateUrl:'./ng/templates/schools.html'
   })
+  .when('/bigchart', {
+    templateUrl:'./ng/templates/bigchart.html',
+    controller: 'bigChartController'
+  })
   .otherwise({
     redirectTo:'/'
   });
@@ -25,7 +29,12 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
 
   .controller('appController', function ($scope, $firebase) {
    
-  })
+  }) 
+   .controller('bigChartController', function ($scope) {
+		$scope.init = function () {
+          setupChart('mainGraph');
+        };
+   })
   .controller('schoolController', function ($scope, $firebase) {
     var schoolRef = new Firebase("codeforindia.firebaseio.com/");
     $scope.schools = $firebase(schoolRef);
@@ -43,7 +52,6 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
   	$scope.init = function () {
       // creates the google map
       initialize();
-      setupChart('mainGraph');
       smallerChart('smallerGraph', 'indi.csv');
       //setupChart('smallerchart', { width: 500, height: 150, tension: 0.5, interpolation: 'monotone', showSummary: false});
     };
