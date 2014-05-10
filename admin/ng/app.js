@@ -1,15 +1,34 @@
 /*global angular:false, $:false, d3:false */
 'use strict';
-angular.module('votersAnalytics', ['ui.bootstrap', 'firebase'], function () {
+angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], function () {
 
 })
-  .controller('appController', function ($scope) {
-    
-    var peopleRef = new Firebase("codeforindia.firebaseio.com/0");
-    
-    // Automatically syncs everywhere in realtime
-    $scope.people = $firebase(peopleRef);
-    //console.log(people);
+
+.config(function($routeProvider) {
+  $routeProvider
+  .when('/', {
+    templateUrl:'./ng/templates/dashboard.html',
+   	controller: 'dashboardController'
+  })
+  .when('/edit/:projectId', {
+    controller:'EditCtrl',
+    templateUrl:'detail.html'
+  })
+  .when('/schools', {
+    controller:'schoolController',
+    templateUrl:'./ng/templates/schools.html'
+  })
+  .otherwise({
+    redirectTo:'/'
+  });
+})
+
+  .controller('appController', function ($scope, $firebase) {
+   
+  })
+  .controller('schoolController', function ($scope, $firebase) {
+    var schoolRef = new Firebase("codeforindia.firebaseio.com/");
+    $scope.schools = $firebase(schoolRef);
   })
   .directive('topMenu', function () {
 	  return {
@@ -18,5 +37,11 @@ angular.module('votersAnalytics', ['ui.bootstrap', 'firebase'], function () {
       link: function (scope, elem, attrs) {
         return;
       }
+    };
+  })
+  .controller('dashboardController', function ($scope, $firebase) {
+  	$scope.init = function () {
+      // creates the google map
+      initialize();
     };
   });

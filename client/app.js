@@ -17,7 +17,6 @@ angular.module("school", [])
 .controller("updateController", ["$scope", "$database",
                                function($scope, service) {
                                  $scope.school = {name: "St. Ann's High School, Secunderabad"}
-                                 $scope.user = "Guest " + Math.round(Math.random()*101);
                                  $scope.messages = service.getMessages();
                                  $scope.addMessage = function() {
                                    service.addMessage({from: $scope.user, content: $scope.message});
