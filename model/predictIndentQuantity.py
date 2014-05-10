@@ -1,10 +1,16 @@
 __author__ = 'apatti'
 import getopt
 from sys import exit,argv
+from readData import getAverageQuantity,getPreviousDayErrorRate,storePredictedValue
 
 def getQuantityValue(date,school):
-    print 'Date:',date
-    print 'school:',school
+    average = getAverageQuantity(date,school)
+    errorRate = getPreviousDayErrorRate(date)
+
+    prediction = average*errorRate
+
+    storePredictedValue(date,school)
+
     return 0
 
 
