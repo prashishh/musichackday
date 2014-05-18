@@ -24,11 +24,10 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
   }) 
    .controller('homeController', function ($scope) {
       $scope.optionshow = 0;
+      $scope.showSel = true;
 
       R.ready(function() {
         R.authenticate(function(nowAuthenticated) {
-          
-
         });
       });
 
@@ -41,6 +40,7 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
           }, 
           success: function(response) {
             $scope.queryResult = response.result.results;
+            $scope.showSel = false;
           },
           error: function(response) {
             showError(response.message);
@@ -49,8 +49,8 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
     }   
 
     $scope.playsong = function(key) {
-      console.log(key);
-      R.player.play({ source: key });
+      console.log($scope.skip);
+      R.player.play({ initialPosition: $scope.skip, source: key });
     };
 
    })

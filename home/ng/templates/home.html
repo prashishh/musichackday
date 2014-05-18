@@ -4,9 +4,11 @@
 	    <div class="col-sm-12 search-form">
 		    <form role="form">
 				    <input type="text" class="form-control" ng-model="queryText" placeholder="Search song..." /> <br />
-				      				  <select ng-model="finalResult" ng-options="item.key as [item.name + ' - ' + item.album] for item in queryResult" ng-change="playsong(finalResult)"></select> <br />
+				    <input type="text" class="form-control" ng-model="skip" placeholder="skip" /> <br />
+				    
+				    <select ng-model="finalResult" ng-options="item.key as [item.name + ' - ' + item.album] for item in queryResult" ng-change="playsong(finalResult)" ng-show="!showSel" class="start-btn-down"></select> 
 
-				  <button ng-click="search()" class="btn btn-default btn-sm pull-right">Let's start!</button>
+				  <button ng-click="search()" class="btn btn-default btn-sm pull-right ">Let's start!</button>
 
 				  </form>
 			</div>
