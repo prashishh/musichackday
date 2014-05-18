@@ -1,6 +1,8 @@
+
+
 /*global angular:false, $:false, d3:false */
 'use strict';
-angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], function () {
+angular.module('votersAnalytics', ['ngRoute', 'ngResource', 'ui.bootstrap','firebase'], function () {
 
 })
 
@@ -19,10 +21,10 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
   });
 })
 
-  .controller('appController', function ($scope, $firebase) {
+  .controller('appController', function ($scope, $firebase, $http) {
    
   }) 
-   .controller('homeController', function ($scope) {
+   .controller('homeController', function ($scope, $http, $resource) {
       $scope.optionshow = 0;
       $scope.showSel = true;
 
@@ -40,49 +42,52 @@ angular.module('votersAnalytics', ['ngRoute','ui.bootstrap','firebase'], functio
           }, 
           success: function(response) {
             $scope.queryResult = response.result.results;
+
             $scope.showSel = false;
-          },
-          error: function(response) {
-            showError(response.message);
           }
-        });      
+      });
     }   
 
-    $scope.playsong = function(key) {
+    var url = "http://api.musixmatch.com/ws/1.1/track.search?q_artist=metallica&q_lyrics=nothing%else%matters&f_has_lyrics=1&format=jsonp&apikey=b956117746bf6dd8824562b615bf0516&callback=JSON_CALLBACK";
+
+  $http.jsonp(url)
+      .success(function(response){
+          console.log(response);
+      })
+      .error(function(response){
+        console.log('error');
+        console.log(response);
+      });
+    
+
+    $scope.playsong = function() {
+
+      console.log($scope.finalResult);
+      var title = encodeURIComponent($scope.finalResult.name); //'sexy%20and%20i%20know%20it';
+      var artist = encodeURIComponent($scope.finalResult.artist);
+      var query = 'http://api.musixmatch.com/ws/1.1/matcher.subtitle.get?q_track='+title;
+
+      query += '&q_artist=';
+      query += artist;  
+      query += '&f_subtitle_length=200&f_subtitle_length_max_deviation=1&apikey=b956117746bf6dd8824562b615bf0516&format=JSONP&subtitle_format=mxm';
+
+      console.log(query);
+      $http.jsonp(query)
+        .success(function(data){
+
+            console.log(data);
+        });
       console.log($scope.skip);
-      R.player.play({ initialPosition: $scope.skip, source: key });
+      R.player.play({ initialPosition: $scope.skip, source: $scope.finalResult.key });
     };
 
    })
   .controller('schoolController', function ($scope, $firebase) {
-    $scope.newSchool = {"Class": "","Range": "","Route Code": "","Route Name": "","School Name ": "","Slno": "","Type": "","location": "","log": "","lon": ""};
-    var schoolRef = new Firebase("codeforindia.firebaseio.com/");
-    $scope.schools = $firebase(schoolRef);
-    $scope.addSchool = function () {  
-      	schoolRef.push($scope.newSchool); 
-      	$scope.reset();
-      	alert("School added");
-    };
-    $scope.reset = function () {
-      $scope.newSchool = {"Class": "","Range": "","Route Code": "","Route Name": "","School Name ": "","Slno": "","Type": "","location": "","log": "","lon": ""};
-    };
+    
   })
   .directive('topMenu', function () {
-	  return {
-      templateUrl: '/ng/templates/topmenu.html',
-      replace: true,
-      link: function (scope, elem, attrs) {
-        return;
-      }
-    };
+	  
   })
   .controller('dashboardController', function ($scope, $firebase) {
-  	$scope.init = function () {
-      // creates the google map
-      initialize();
-     // smallerChart('smallerGraph', 'indi.csv');
-      //setupChart('smallerchart', { width: 500, height: 150, tension: 0.5, interpolation: 'monotone', showSummary: false});
-    };
-    
-    
+  	
   });

@@ -3,10 +3,13 @@
     <div class="row">
 	    <div class="col-sm-12 search-form">
 		    <form role="form">
+
+		    		<input type="text" class="form-control" ng-model="phone" placeholder="Enter phone..." /> <br />
+
 				    <input type="text" class="form-control" ng-model="queryText" placeholder="Search song..." /> <br />
 				    <input type="text" class="form-control" ng-model="skip" placeholder="skip" /> <br />
 				    
-				    <select ng-model="finalResult" ng-options="item.key as [item.name + ' - ' + item.album] for item in queryResult" ng-change="playsong(finalResult)" ng-show="!showSel" class="start-btn-down"></select> 
+				    <select ng-model="finalResult" ng-options="item as [item.name + ' - ' + item.album] for item in queryResult" ng-change="playsong()" ng-show="!showSel" class="start-btn-down"></select> 
 
 				  <button ng-click="search()" class="btn btn-default btn-sm pull-right ">Let's start!</button>
 
